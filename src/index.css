@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-titan {
+    font-family: 'Titan One', cursive, sans-serif;
+  }
+  .font-anton {
+    font-family: 'Anton', sans-serif;
+  }
+  .font-oswald {
+    font-family: 'Oswald', sans-serif;
+  }
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9e30;
+}
+
+/* Pulse animation for active navigation indicator */
+@keyframes orangePulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 10px #ff9e30;
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.15);
+    box-shadow: 0 0 16px #ff9e30;
+  }
+}
+
+.pulse-indicator {
+  animation: orangePulse 2.5s infinite ease-in-out;
+}

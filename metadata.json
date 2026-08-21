@@ -1,0 +1,6 @@
+{
+  "name": "Trail Blaze Trekking",
+  "description": "Sewa Setu - Citizen Grievance Redressal and Transparent Civic Tracking Portal for Kathmandu Valley and Nepal municipalities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
